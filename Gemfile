@@ -9,6 +9,8 @@ gem 'rails', '~> 6.1.6', '>= 6.1.6.1'
 # gem 'sqlite3', '~> 1.4'
 gem 'pg', '~> 1.4', '>= 1.4.3'
 # Use Puma as the app server
+gem 'sendgrid-ruby'
+#sendgrid
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
