@@ -1,0 +1,89 @@
+<div class="container">
+  <div class="row">
+    <div class="col-5">
+      <div class="hero-head">
+        <h1>We tackle your biggest challenges.</h1>
+      </div>
+    </div>
+    <div class="col-7">
+      <%= image_tag 'hero-sec.png', class:"hero-image mt-5", alt: 'hero-img' %>
+    </div>
+  </div>
+</div>
+<!-- SECTION 1 START-->
+<section class="sign-in-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 custom-space">
+        <%= render 'layouts/error-messages' %>
+        <h1><%= t('.sign_in') %></h1>
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="form-group mt-3">
+            <%= f.label :email %>
+            <%= f.email_field :email, autocomplete: 'email', class: 'form-control' %>
+          </div>
+          <div class="form-group mt-3">
+            <%= f.label :password %>
+            <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control' %>
+          </div>
+          <% if devise_mapping.rememberable? %>
+            <div class="form-group form-check mt-3">
+              <%= f.check_box :remember_me, class: 'form-check-input' %>
+              <%= f.label :remember_me, class: 'form-check-label' do %>
+                <%= resource.class.human_attribute_name('remember_me') %>
+              <% end %>
+            </div>
+          <% end %>
+          <div class="form-group mt-3">
+            <%= f.button "Log In",  type: "submit", class: 'black-button'  %>
+          </div>
+        <% end %>
+        <%= render 'devise/shared/links' %>
+      </div>
+      <div class="col-3 justify-content-center">
+        <div class="pricingTable custom-price-tab-1">
+          <div class="pricingTable-header">
+            <i class="fa fa-adjust"></i>
+            <div class="price-value"> Free  <span class="month">Every Month</span> </div>
+          </div>
+          <h3 class="heading">Pro</h3>
+          <div class="pricing-content">
+            <ul>
+              <li><b>2</b> Team Members</li>
+              <li><b>Unlimited</b> Projects</li>
+            </ul>
+          </div>
+          <div class="pricingTable-signup">
+              <%= link_to t(".sign_up"), new_registration_path(resource_name) %>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="pricingTable">
+          <div class="pricingTable-header">
+            <i class="fa fa-adjust"></i>
+            <div class="price-value"> $350 <span class="month">Per Month</span> </div>
+          </div>
+          <h3 class="heading">Enterprise</h3>
+          <div class="pricing-content">
+            <ul>
+              <li><b>10</b> Team Members</li>
+              <li><b>Unlimited</b> Projects</li>
+            </ul>
+          </div>
+          <div class="pricingTable-signup">
+            <%= link_to t(".sign_up"), new_registration_path(resource_name) %>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  </section>
+<!-- SECTION 1 END-->
+
+
+
+
+

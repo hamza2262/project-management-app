@@ -1,0 +1,204 @@
+@import 'bootstrap/dist/css/bootstrap';
+@font-face {
+  font-family: 'Roboto';
+  src: url('/app/fonts/RobotoMono-SemiBold.ttf')
+}
+
+h1,h2,h3,h4,h5{
+  font-family: RobotoMono-SemiBold;
+}
+
+.logo-image{
+  width: 25%;
+}
+.black-button{
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 0px;
+  font-family: RobotoMono-SemiBold
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+.form-control:focus {
+  border-color: black;
+  box-shadow: none;
+}
+.hero-image{
+  width: 100%;
+}
+.navbar{
+  font-family: RobotoMono-SemiBold;
+}
+.hero-head h1{
+  font-family: RobotoMono-SemiBold;
+  margin-top: 115px;
+  font-size: 55px;
+  max-width: 438px;
+}
+.form-control{
+  font-family: RobotoMono-SemiBold;
+}
+.form-group{
+  font-family: RobotoMono-SemiBold;
+  width: 70%;
+}
+.sign-in-sec{
+  background: #d8dbd6;
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+.custom-space{
+  margin-top: 55px;
+}
+.notice{
+  font-family: RobotoMono-SemiBold;
+}
+
+.alert{
+  font-family: RobotoMono-SemiBold;
+  color: #B00100;
+  padding-left: 0px;
+}
+b{
+  font-family: RobotoMono-SemiBold;
+  color: black;
+}
+li{
+  font-family: RobotoMono-SemiBold;
+}
+.pricingTable {
+  text-align: center;
+  background: #fff;
+  margin: 0 -15px;
+  box-shadow: 0 0 10px #ababab;
+  padding-bottom: 40px;
+  color: #cad0de;
+  transform: scale(1);
+  transition: all .5s ease 0s;
+  margin: 0 auto;
+  margin-top: 55px;
+}
+.pricingTable:hover {
+  transform: scale(1.05);
+  z-index: 1
+}
+
+.pricingTable .pricingTable-header {
+  padding: 40px 0;
+  background: black;
+  transition: all .5s ease 0s
+}
+.pricingTable .pricingTable-header i {
+  font-size: 50px;
+  color: #858c9a;
+  margin-bottom: 10px;
+  font-family: RobotoMono-SemiBold;
+  transition: all .5s ease 0s
+
+}
+
+.pricingTable .price-value {
+  font-size: 35px;
+  color: white;
+  font-family: RobotoMono-SemiBold;
+  transition: all .5s ease 0s
+}
+
+.pricingTable .month {
+  display: block;
+  font-size: 14px;
+  color: #cad0de
+}
+
+.pricingTable:hover .month,
+.pricingTable:hover .price-value,
+.pricingTable:hover .pricingTable-header i {
+  color: #fff
+}
+
+.pricingTable .heading {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.pricingTable .pricing-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px
+}
+
+.pricingTable .pricing-content ul li {
+  line-height: 30px;
+  color: #a7a8aa
+}
+
+.pricingTable .pricingTable-signup a {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px 35px;
+  background: #000000;
+  text-transform: uppercase;
+  font-family: RobotoMono-SemiBold;
+  transition: all .3s ease 0s;
+}
+
+
+.pricingTable.blue .heading,
+.pricingTable.blue .price-value {
+  color: #4b64ff
+}
+
+.pricingTable.blue .pricingTable-signup a,
+.pricingTable.blue:hover .pricingTable-header {
+  background: black;
+}
+
+.pricingTable.blue .pricingTable-signup a:hover {
+  box-shadow: 0 0 10px #4b64ff
+}
+
+.pricingTable.red .heading,
+.pricingTable.red .price-value {
+  color: black;
+}
+
+.pricingTable.red .pricingTable-signup a,
+.pricingTable.red:hover .pricingTable-header {
+  background: #ff4b4b
+}
+
+.pricingTable.red .pricingTable-signup a:hover {
+  box-shadow: 0 0 10px #ff4b4b
+}
+
+.pricingTable.green .heading,
+.pricingTable.green .price-value {
+  color: #40c952
+}
+
+.pricingTable.green .pricingTable-signup a,
+.pricingTable.green:hover .pricingTable-header {
+  background: #40c952
+}
+
+.pricingTable.green .pricingTable-signup a:hover {
+  box-shadow: 0 0 10px #40c952
+}
+
+.pricingTable.blue:hover .price-value,
+.pricingTable.green:hover .price-value,
+.pricingTable.red:hover .price-value {
+  color: #fff
+}

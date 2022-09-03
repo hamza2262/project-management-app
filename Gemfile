@@ -1,16 +1,20 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-
 ruby '2.7.2'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.6', '>= 6.1.6.1'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3', '~> 1.4'
 gem 'pg', '~> 1.4', '>= 1.4.3'
 # Use Puma as the app server
+gem 'devise'
+# Using Devise gem for user authentication
 gem 'sendgrid-ruby'
 #sendgrid
+gem 'devise-bootstrap-views', '~> 1.0'
+# Devise bootstrap views
+# gem 'bootstrap', '~> 5.0.2'
+#bootstrap gem to use bootstrap classes
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
