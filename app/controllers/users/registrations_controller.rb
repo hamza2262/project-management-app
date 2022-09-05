@@ -9,7 +9,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
-  POST
   def create
     super
     # Create the user from params
@@ -28,7 +27,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def user_params
     params.require(:user).permit(:name, :email, :login)
   end
-end
 
 
   # GET /resource/edit
