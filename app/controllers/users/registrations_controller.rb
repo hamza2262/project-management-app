@@ -18,7 +18,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
       UserNotifierMailer.send_signup_email(@user).deliver
       redirect_to(@user, :notice => 'User created')
     else
-      render :action => 'new'
+
     end
   end
 

@@ -1,4 +1,8 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="container text-center">
+  <%= image_tag 'logo.png', alt: 'icon', class: 'homepage-logo' %>
+  <h1 class="home_page">Welcome To Project Management App</h1>
+  <a href="<%= user_session_path %>"><%= button_tag "Log In",  type: "submit", class: 'login-button'  %></a>
+  <a href="<%= new_user_registration_path %>"><%= button_tag "Sign Up",  type: "submit", class: 'signup-button'  %></a>
+</div>
 
-<h1> Hamza </h1>
+
