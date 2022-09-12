@@ -13,7 +13,8 @@ gem 'sendgrid-ruby'
 #sendgrid
 gem 'devise-bootstrap-views', '~> 1.0'
 # Devise bootstrap views
-gem 'erd', group: :development
+# gem 'cancancan'
+# gem 'erd', group: :development
 gem 'ruby-graphviz', '~> 1.2', '>= 1.2.5'
 # gem 'bootstrap', '~> 5.0.2'
 #bootstrap gem to use bootstrap classes
