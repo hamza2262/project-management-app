@@ -10,8 +10,39 @@
           <a class="nav-link active" aria-current="page" href="<%=root_path%>">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" <%= link_to "Sign out", destroy_user_session_path, :method => :delete %></a>
+          <a class="nav-link active" aria-current="page" href="<%=edit_user_registration_path%>">Profile</a>
         </li>
+        <li class="nav-item">
+          <%= button_to "Sign Out", destroy_user_session_path, :class => "logout-button", :method => :delete %>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
+<section>
+  <div class="container current_user">
+    <%#- if user_signed_in? %>
+<!--      <h1>Welcome,<%#= current_user.name %></h1>-->
+    <%# end %>
+    <div class="row">
+      <div class="col-3">
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

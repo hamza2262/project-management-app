@@ -5,5 +5,7 @@ class User < ApplicationRecord
   has_many :teams
 
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable, :confirmable
+         :recoverable, :rememberable, :validatable
+
+  mount_uploader :avatars, AvatarUploader
 end

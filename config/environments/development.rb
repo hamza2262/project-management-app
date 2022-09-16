@@ -13,7 +13,7 @@ Rails.application.configure do
 
   # config.action_mailer.delivery_method = :test
   # config.action_mailer.default_url_options = { host: 'my-p-app.herokuapp.com' }
-  # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # Show full error reports.
   config.consider_all_requests_local = true

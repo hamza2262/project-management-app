@@ -15,6 +15,9 @@
           <%= f.email_field :email, autocomplete: 'email', class: 'form-control' %>
         </div>
 
+        <%= f.file_field :avatars %>
+        <%= image_tag(@user.avatars.url(:thumb)) if @user.avatars?%>
+
         <div class="form-group mt-3">
           <%= f.label :password %>
           <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control' %>
