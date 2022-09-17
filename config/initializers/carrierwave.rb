@@ -13,6 +13,5 @@
      config.fog_directory = ENV['S3_BUCKET']
      config.storage = :fog
      config.storage = :file
-     config.enable_processing = Rails.env.development?
     end
   end
