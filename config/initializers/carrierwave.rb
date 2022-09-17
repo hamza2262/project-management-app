@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require ‘carrierwave/storage/abstract’
-require ‘carrierwave/storage/file’
-require ‘carrierwave/storage/fog’
 
   if Rails.env.staging? || Rails.env.production?
     CarrierWave.configure do |config|
@@ -15,8 +12,7 @@ require ‘carrierwave/storage/fog’
       }
      config.fog_directory = ENV['S3_BUCKET']
      config.storage = :fog
+     config.storage = :file
+     config.enable_processing = Rails.env.development?
     end
-  else
-    config.storage = :file
-    config.enable_processing = Rails.env.development?
   end
