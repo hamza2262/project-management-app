@@ -1,5 +1,8 @@
 class Project < ApplicationRecord
   belongs_to :user
-  has_many :attachments, :dependent => :destroy
-  has_many :project_users, :dependent => :destroy
+  belongs_to :team
+  belongs_to :members
+  has_many :attachments, dependent: :destroy
+
+  accepts_nested_attributes_for :team
 end

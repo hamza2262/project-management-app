@@ -1,0 +1,20 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-5">
+        <h1>Add Members</h1>
+        <%= form_for @member, url: team_members_path(@team, @member), method: :post  do |f|%>
+          <div class="form-group mt-3">
+            <%= f.label :member_name %>
+            <%= f.text_field :member_name, autofocus: true, autocomplete: 'member_name', class: 'form-control' %>
+          </div>
+          <div class="form-group mt-3">
+            <%= f.label :member_email %>
+            <%= f.text_field :member_email, autofocus: true, autocomplete: 'member_email', class: 'form-control' %>
+          </div>
+          <%= f.submit :class => "create-team-button"%>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>

@@ -10,7 +10,14 @@
           <a class="nav-link active" aria-current="page" href="<%=root_path%>">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<%=edit_user_registration_path%>">Profile</a>
+          <a class="nav-link active" aria-current="page" href="<%=edit_user_registration_path%>">
+            <% if user_signed_in? %>
+              <p>Welcome,<%= current_user.name %></p>
+            <% end %>
+          </a>
+        </li>
+        <li class="nav-item">
+          <%= image_tag(current_user.avatars.url(:thumb)) if current_user.avatars? %>
         </li>
         <li class="nav-item">
           <%= button_to "Sign Out", destroy_user_session_path, :class => "logout-button", :method => :delete %>
@@ -20,17 +27,21 @@
   </div>
 </nav>
 <section>
-  <div class="container current_user">
-    <%#- if user_signed_in? %>
-<!--      <h1>Welcome,<%#= current_user.name %></h1>-->
-    <%# end %>
+  <div class="container">
     <div class="row">
       <div class="col-3">
-
+        <div class="card mt-5">
+          <div class="card-header text-secondary">
+          </div>
+          <div class="card-body shadow-lg">
+            <h5 class="card-title">Create Your Team</h5>
+            <p class="card-text text-secondary">You can manage your projects more professionally by adding more members in your team</p>
+            <%= button_to "New Team", new_team_path, method: :get, :class => "create-team-button"%>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
 </section>
 
 

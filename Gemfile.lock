@@ -137,6 +137,9 @@ GEM
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
+    milia (0.3.30)
+      devise (>= 1.4.8)
+      rails (>= 3.1)
     mime-types (3.4.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2022.0105)
@@ -299,6 +302,7 @@ DEPENDENCIES
   fog-aws
   jbuilder (~> 2.7)
   listen (~> 3.3)
+  milia
   mini_magick
   pg (~> 1.4, >= 1.4.3)
   puma (~> 5.0)

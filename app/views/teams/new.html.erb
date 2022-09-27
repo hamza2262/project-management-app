@@ -1,0 +1,16 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-5">
+        <h1>Enter Team Name</h1>
+        <%= form_for @team do |f|%>
+          <div class="form-group mt-3">
+            <%= f.label :name %>
+            <%= f.text_field :name, autofocus: true, autocomplete: 'name', class: 'form-control' %>
+          </div>
+          <%= f.submit%>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
