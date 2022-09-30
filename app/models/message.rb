@@ -1,5 +1,4 @@
-# class Message < ApplicationRecord
-#   belongs_to :teams
-#   belongs_to :projects
-#   belongs_to :members
-# end
+# frozen_string_literal: true
+
+class Message < ApplicationRecord
+end
