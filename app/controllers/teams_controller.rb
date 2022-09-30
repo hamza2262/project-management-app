@@ -29,7 +29,7 @@ class TeamsController < ApplicationController
   def update
     @team = set_team
     if current_user.teams.update(@team.id, team_params)
-      redirect_to teams_path, flash: { notice: 'Team Updated.' }
+      redirect_to teams_path @team, flash: { notice: 'Team Updated.' }
     else
       render :edit
     end
@@ -59,4 +59,3 @@ class TeamsController < ApplicationController
     params.require(:team).permit(:name, users_attributes: %i[id name email _destroy])
   end
 end
-

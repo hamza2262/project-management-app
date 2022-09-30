@@ -1,0 +1,29 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <%= render 'layouts/error-messages' %>
+        <h1>My Projects</h1>
+        <table class="table table-borderless table-hover">
+          <thead>
+          <tr>
+            <th scope="col">Project Names</th>
+            <th scope="col">Created At</th>
+            <th scope="col">Action</th>
+          </tr>
+          </thead>
+          <tbody>
+          <% @project.each do |f| %>
+            <tr>
+              <td><%= f.title %></td>
+              <td><%= f.created_at.strftime("%d-%Y-%m") %></td>
+              <td><%= button_to "Edit Project", edit_project_path(f), method: :get, :class => "create-team-button"%></td>
+              <td><%= button_to "Delete Project", project_path(f), method: :delete, :class => "create-team-button"%></td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

@@ -43,17 +43,20 @@
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="card mt-5">
+          <div class="card-header text-secondary">
+          </div>
+          <div class="card-body shadow-lg">
+            <h5 class="card-title">Add Your Projects</h5>
+            <p class="card-text text-secondary">You can manage your projects more professionally by adding your projects</p>
+            <%= button_to "New Project", new_project_path, method: :get, :class => "create-team-button"%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
