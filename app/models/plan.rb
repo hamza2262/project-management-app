@@ -1,4 +1,5 @@
-# class Plan < ApplicationRecord
-#   has_many :users
-#   PLANS = %i[pro enterprise].freeze
-# end
+# frozen_string_literal: true
+
+class Plan < ApplicationRecord
+
+end
